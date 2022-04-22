@@ -78,6 +78,11 @@ To start the camera node in ROS:
 roslaunch realsense2_camera rs_camera.launch
 ```
 
+To get the left and right camera, use this instead:
+```bash
+roslaunch realsense2_camera rs_camera.launch enable_infra1:=true enable_infra2:=true
+```
+
 This will stream all camera sensors and publish on the appropriate ROS topics.
 
 Other stream resolutions and frame rates can optionally be provided as parameters to the 'rs_camera.launch' file.
